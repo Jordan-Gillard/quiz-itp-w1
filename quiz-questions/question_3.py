@@ -13,4 +13,10 @@ def remove_Es(a_string):
     remove_Es('abc')      # 'abc'
     """
     # Write your code here
-    pass
+    the_answer = ''
+    for char in a_string:
+        if char == 'e' or char == 'E':
+            continue
+        else:
+            the_answer += char
+    return the_answer
